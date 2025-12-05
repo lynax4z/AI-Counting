@@ -33,7 +33,7 @@ py::list detect(py::array_t<uint8_t> frameArray){
 }
 
 PYBIND11_MODULE(optimize, m){
-    m.doc() = "highly receiving frame function for better performance";
-    m.def("detect", &detect, "draw a boxes if an object found");
-    m.def("loadCascade", &loadCascade, "input your file into this function", py::arg("path"));
+    m.doc() = "A highly efficient frame-receiving function for better performance.";
+    m.def("detect", &detect, "Draw boxes if objects are found");
+    m.def("loadCascade", &loadCascade, "load a pre-trained AI model", py::arg("path"));
 }
