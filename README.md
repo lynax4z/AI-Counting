@@ -49,4 +49,3 @@ REQUIREMENTS — optimize.cpp (pybind11 + OpenCV, macOS M1/M2)
   > xattr -d com.apple.quarantine optimize*.so
   > codesign --force --sign - optimize*.so
 
-END
